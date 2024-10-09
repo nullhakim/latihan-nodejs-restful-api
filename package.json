@@ -20,6 +20,7 @@
     "bcrypt": "^5.1.1",
     "express": "^4.21.0",
     "joi": "^17.13.3",
+    "latihan-nodejs-restful-api": "file:",
     "uuid": "^10.0.0",
     "winston": "^3.15.0"
   },
