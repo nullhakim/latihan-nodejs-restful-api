@@ -29,9 +29,9 @@ export const getTestUser = async () => {
 };
 
 export const removeAllTestContacts = async () => {
-  return prismaClient.contact.deleteMany({
+  await prismaClient.contact.deleteMany({
     where: {
       username: "test",
-    }
-  })
-}
+    },
+  });
+};
