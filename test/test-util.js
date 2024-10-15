@@ -75,7 +75,7 @@ export const removeAllTestAddresses = async () => {
     where: {
       contact: {
         username: "test",
-      }
+      },
     },
   });
 };
@@ -90,16 +90,16 @@ export const createTestAddress = async () => {
       province: "provinsi test",
       country: "indonesia",
       postal_code: "234234",
-    }
-  })
-}
+    },
+  });
+};
 
 export const getTestAddress = async () => {
   return prismaClient.address.findFirst({
     where: {
       contact: {
         username: "test",
-      }
+      },
     },
   });
 };
